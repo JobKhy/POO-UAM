@@ -15,16 +15,11 @@ public:
 		}
  }
 
- conjunto(std::initializer_list<int> c)
+ explicit conjunto(int size, int val)
  {
-		this->s = 0;
-		for (int i = 0; i < 100; i++)
-			this->values[i] = 0;
-
-		for (int v : c)
-		{
-			inserta(v);
-		}
+ 	this->s = size;
+		for (int i = 0; i < size; i++)
+			this->values[i] = val;
  }
 
  conjunto(const conjunto &oc)
@@ -132,8 +127,8 @@ int main()
  bool b3 = c.inserta(3);
 
  std::cout << b1 << " "
-											<< b2 << " "
-											<< b3 << "\n";
+		   << b2 << " "
+		   << b3 << "\n";
 
  std::cout << c.size() << "\n";
 
