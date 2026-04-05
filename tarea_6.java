@@ -13,7 +13,7 @@ class Conjunto{
  }
 
  static int maximo(){
-  return 0;
+  return 99;
  }
 
  boolean inserta(int x) {
