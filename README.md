@@ -123,7 +123,7 @@ int main() {
 0
 ```
 
-### Tarea 4:
+### Tarea 4 y 7(en java):
 
 Implementa una jerarquía de clases para modelar flujos de entrada genéricos. Se define una clase base abstracta `flujo_entrada` y dos implementaciones concretas.
 
@@ -135,6 +135,8 @@ Las clases que se deben implementar son:
 - Función no miembro `operator>>(flujo_entrada&, int&)` que lee un entero saltando espacios en blanco, soporta signo `+` y `-`, y lanza `std::runtime_error` en caso de error.
 
 #### Ejemplo de uso:
+
+#### CPP
 
 ```cpp
 int main() {
@@ -149,7 +151,22 @@ int main() {
 }
 ```
 
-### Tarea 5:
+#### Java
+
+```java
+  public static void main(String[] args) throws Exception {
+    var ent1 = new EntradaCadena("5 7");
+    int a = RutinasEntrada.leeEntero(ent1);
+    int b = RutinasEntrada.leeEntero(ent1);
+    var ent2 = new EntradaCadena(" 123 456");
+    int x = RutinasEntrada.leeEntero(ent2);
+    int y = RutinasEntrada.leeEntero(ent2);
+    System.out.printf("%d %d\n", a, b);
+    System.out.printf("%d %d\n", x, y);
+  }
+```
+
+### Tarea 5 y 8(en java):
 
 Implementa un intérprete de un lenguaje simple de instrucciones usando polimorfismo. El programa lee instrucciones desde la entrada estándar y las ejecuta sobre una tabla de variables enteras.
 
